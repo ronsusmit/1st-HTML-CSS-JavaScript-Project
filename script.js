@@ -78,19 +78,6 @@ function update() {
 }
 
 lapButton.addEventListener("click",()=> {
-    // if(hourCount===0){
-    //     hourCount = "00"
-    // }
-    // if(minCount===0){
-    //     minCount = "00"
-    // }
-    // if(msecCount===0){
-    //     msecCount = "00"
-    // }
-    // if(secCount < 10){
-    //     secCount = "0"+secCount
-    // }
-    // hourCount = hourCount.padStart('0', 4);
     if (hourCount != 0 || minCount != 0 || secCount != 0 || msecCount != 0) {
         hourCountStr = hourCount.toString().padStart(2, '0');
         minCountStr = minCount.toString().padStart(2, '0');
