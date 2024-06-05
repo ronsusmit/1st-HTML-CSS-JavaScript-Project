@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-image: url(bg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+@font-face {
+    font-family: monument;
+    src: url(MonumentExtended-Regular.otf);
+}
+
+.m{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.541));
+}
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.541));
+}
+
+.main1{
+    height: 300px;
+    width: 500px;
+    background-color: #131028ab;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.top{
+    height: 100px;
+    width: 400px;
+    background-color:#3832605e;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+
+.topbox{
+    height: 80px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.toptxt{
+    height: 50px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Red Hat Display";
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(194, 194, 194);
+}
+.topnum{
+    height: 50px;
+    width: 70px;
+    background-color: #7c76a35e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Red Hat Display";
+    font-size: 24px;
+    font-weight: 80;
+    color: white;
+    border-radius: 6px;
+    margin-bottom: 10px ;
+}
+
+.btm{
+    height:100px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+
+.button{
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #7c76a35e;
+    color: white;
+    font-family: "Red Hat Display";
+    font-weight: 320;
+    border: none;
+    cursor: pointer;
+}
+
+.lapdiv{
+    height: 300px;;
+    width: 500px;
+    background-color: #131028ab;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+.lapdiv1{
+    height: 200px;
+    width: 300px;
+    background-color: #3832605e;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    margin-bottom: 20px;
+    overflow-y: auto ;
+    border-radius: 5px;
+}
+#laplist {
+    font-family: "Red Hat Display";
+    padding-left: 40px;
+    padding-top: 20px;
+    color: rgb(147, 142, 142); 
+    font-size: 16px;
+    list-style-type: none;
+}
+.lap{
+    height: 20px;
+    width: 20px;
+    background-color: aliceblue;
+}
+
+#laplist li::marker {
+    font-size: 38px;
+    color: rgb(156, 156, 254);
+}
+
+.btmtxt{
+    padding-bottom: 100px;
+    font-family: monument;
+    font-size: 20px;
+    color: rgba(154, 184, 209, 0.546);
+    text-shadow: 2px 4px 4px rgba(4, 12, 26, 0.6);
+}
+ 
+.table{
+    display: flex;
+    align-items:flex-start;
+    justify-content:center;
+    font-family: "Red Hat Display";
+    font-size: 20px;
+    color: white;
+}
+
+.tablehead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#laplist{
+    padding-right: 30px;
+}
+.th1{
+    color: rgba(255, 255, 255, 0.591);
+    font-family: "Red Hat Display";
+    font-weight: 400;
+    font-size: 20px;
+}
+#lap{
+    background-color: #7c76a31a;
+    color: rgba(255, 255, 255, 0.32);
+}
+#reset{
+    background-color:#7c76a31a;
+    color: rgba(255, 255, 255, 0.32);
+}
+
+/* ::-webkit-scrollbar {
+    width: 2em;
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(120, 75%, 50%/1);
+} */
+
+
+
+::-webkit-scrollbar {
+    display: none;
+}
